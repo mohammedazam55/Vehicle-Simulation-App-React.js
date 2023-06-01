@@ -1,0 +1,223 @@
+* {
+  font-weight: normal;
+  box-sizing: border-box;
+}
+/* Icons */
+
+nav {
+  /* vertical navbar */
+  background-color: #c0c0c0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  /* Space between navbar items */
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+nav a {
+  color: #000;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav .selected {
+  background-color: #fff;
+  color: steelblue;
+}
+
+#homeId,
+#vehicleId,
+#sceneId,
+#allSceneId {
+  margin-left: 300px;
+  background-color: #1e1e1e;
+  height: 100vh;
+  padding: 10px 40px;
+  color: white;
+}
+h2 {
+  margin-top: 50px;
+}
+/* Home.js */
+
+/* AddScenario.js */
+.addScene {
+  width: 90%;
+  height: 120px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.addScene .firstForm,
+.addScene .secondForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addScene input[type="text"] {
+  font-size: medium;
+  width: 80%;
+  background-color: #1e1e1e;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 30px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  opacity: 0.6;
+}
+.btn1 {
+  background-color: rgb(61, 164, 61);
+  color: white;
+  margin-top: 30px;
+  border: none;
+  font-size: medium;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn2 {
+  background-color: darkgoldenrod;
+  color: white;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+  font-size: medium;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn3 {
+  background-color: deepskyblue;
+  color: white;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+  font-size: medium;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* AddVehicle.js */
+
+.addVehicle {
+  height: 200px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.addBRow1,
+.addBRow2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.addVBttn1,
+.addVBttn2,
+.addVBttn3,
+.addVBttn4,
+.addVBttn5,
+.addVBttn6 {
+  flex-basis: calc(23% - 10px);
+  margin-bottom: 10px;
+}
+.addVehicle input[type="text"] {
+  font-size: medium;
+  background-color: #1e1e1e;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: white;
+  padding: 15px 30px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+.addVehicle select {
+  font-size: medium;
+  background-color: #1e1e1e;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: white;
+  padding: 15px 30px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+#homeId select {
+  font-size: medium;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  margin: 10px;
+  border: 1px solid gray;
+}
+label {
+  display: block;
+}
+
+.addVBttn2 input[type="text"],
+.addVBttn3 input[type="text"],
+.addVBttn4 input[type="text"],
+.addVBttn5 input[type="text"] {
+  width: 105%;
+  padding: 5px 0px;
+  padding-left: 20px;
+}
+.addVBttn1 select,
+.addVBttn6 select {
+  width: 105%;
+  padding: 5px 0px;
+  padding-left: 20px;
+  color: gray;
+}
+/* AllScenarios.js */
+#allSIdGrid {
+  display: flex;
+}
+/* Home Table and All Scenarios Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+thead {
+  background-color: #3a3a3a;
+}
+tbody {
+  text-align: center;
+  background-color: #fff;
+}
+tbody tr {
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid #000;
+}
+thead th,
+tbody td {
+  padding: 15px 30px;
+}
+button {
+  border: 0px solid white;
+  background-color: white;
+  cursor: pointer;
+}
