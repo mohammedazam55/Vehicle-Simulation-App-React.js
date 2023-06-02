@@ -41,7 +41,7 @@ npm install # install the dependencies
 3. Start the json-server (If this is not started, the application will not work)
 
 ```bash
-json-server --watch db.json --port 3004
+json-server --watch db.json --port 3001
 ```
 
 4. Start the application
