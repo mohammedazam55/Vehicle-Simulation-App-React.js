@@ -15,8 +15,37 @@ This project is a vehicle simulation application built using React.js. It allows
 
 ## Installation
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/)
+- [json-server](https://www.npmjs.com/package/json-server)
+
+```
+npm install -g json-server
+```
+
+- [Visual Studio Code](https://code.visualstudio.com/) (optional)
+
 1. Clone the repository to your local machine.
+
+```
+git clone https://github.com/mohammedazam55/Vehicle-Simulation-App-React.js.git
+```
+
 2. Navigate to the project directory.
 
 ```bash
-cd vehicle-simulation-app
+npm install # install the dependencies
+```
+
+3. Start the json-server (If this is not started, the application will not work)
+
+```bash
+json-server --watch db.json --port 3004
+```
+
+4. Start the application
+
+```bash
+npm start
+```

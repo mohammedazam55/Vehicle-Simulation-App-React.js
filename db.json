@@ -2,8 +2,8 @@
   "scenarios": [
     {
       "id": "1",
-      "name": "Test",
-      "time": "2"
+      "name": "Scenario 1",
+      "time": "5"
     },
     {
       "id": "2",

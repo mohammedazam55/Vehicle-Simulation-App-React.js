@@ -9,12 +9,13 @@ import Home from "../pages/Home";
 import ScenarioForm from "./ScenarioForm";
 import ScenarioList from "./ScenarioList";
 import VehicleForm from "./VehicleForm";
+import "../utils/components.css";
 export default function Sidebar() {
   return (
     <>
       <Router>
-        <nav>
-          <NavLink active to="/">
+        <nav className="navbar">
+          <NavLink className="selected" active="true" to="/">
             Home
           </NavLink>
           <NavLink to="/add-scenario">Add Scenario</NavLink>

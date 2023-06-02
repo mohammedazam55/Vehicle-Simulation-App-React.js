@@ -5,7 +5,7 @@ import { ReactComponent as Edit } from "../icons/edit.svg";
 import { ReactComponent as Delete } from "../icons/delete.svg";
 import { ReactComponent as Add } from "../icons/add.svg";
 //
-import { fetchScenarios } from "../services/api";
+import { fetchScenarios, deleteScenario } from "../services/api";
 //
 export default function AllScenarios() {
   //
@@ -21,6 +21,15 @@ export default function AllScenarios() {
       setScenarios(response.data);
     } catch (error) {
       console.log(error);
+    }
+  };
+
+  const deleteAScenario = async (id) => {
+    try {
+      await deleteScenario(id);
+      setScenarios(scenarios.filter((scenario) => scenario.id !== id));
+    } catch (error) {
+      console.error("Error deleting scenario:", error);
     }
   };
 
@@ -64,7 +73,16 @@ export default function AllScenarios() {
                 </button>
               </td>
               <td>
-                <button>
+                <button
+                  onClick={() => {
+                    const confirmed = window.confirm(
+                      "Are you sure you want to delete this vehicle?"
+                    );
+                    if (confirmed) {
+                      deleteAScenario(scenario.id);
+                    }
+                  }}
+                >
                   <Delete />
                 </button>
               </td>
